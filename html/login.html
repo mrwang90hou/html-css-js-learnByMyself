@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>教育云后台监控系统</title>
+    <link rel="stylesheet" type="text/css" href="../js/lib/bootstrap-3.0.0-dist/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <script type="text/javascript" src="../js/sea.js"></script>
+	<script type="text/javascript" src="../js/config.js"></script>
+</head>
+<body id="login_bg">
+	<div class="header">
+		<h1><img src="../image/logo.png" class="logo" />教育云后台监控系统</h1>
+	</div>
+	<div class="wrapper">
+		<div class="login">
+			<div class="login-header"><h4>用户登录</h4></div>
+			<div class="login-content">
+				<div class="form_text">
+					<span>管理员：</span>
+					<span><input type="text" name="" placeholder="username" class="form-control" id="username"></span>
+				</div>
+				<div class="form_text">
+					<span>口令：</span>
+					<span><input type="password" name="" placeholder="password" class="form-control" id="password"></span>
+				</div>
+				<div class="form_select">
+					<span class="select_item">用户类型：</span><div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" >
+					    群组成员
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    <li><a href="#">超级管理员</a></li>
+					    <li><a href="#">系统管理员</a></li>
+					    <li><a href="#">群组管理员</a></li>
+					    <li><a href="#">群组成员</a></li>
+					  </ul>
+					</div>
+				</div>
+				<div class="illustrate">
+					<div>说明：</div>
+					<div>1、遗忘密码请与超级管理员联系，初始密码为“888888”。</div>
+					<div>2、“注册”功能用于创建新的群组。</div>
+				</div>
+			</div>
+			<div class="login-footer">
+				<button class="btn btn-primary login_btn"><a href="#">登录</a></button>
+				<button class="btn btn-warning"><a href="team_create.html">注册</a></button>
+				<!-- <button class="btn btn-warning" disabled="disabled">注册</button> -->
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" role="dialog" id="warning">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">提示</h4>
+	      </div>
+	      <div class="modal-body">
+	       	您的账户或者密码有误！
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+<script type="text/javascript">
+	seajs.use(['../js/modules/login'])   // 这里 use 方法只作为入口函数用，不做业务逻辑处理
+</script>
+</body>

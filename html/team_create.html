@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>教育云后台监控系统</title>
+    <link rel="stylesheet" type="text/css" href="../js/lib/bootstrap-3.0.0-dist/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <script type="text/javascript" src="../js/sea.js"></script>
+	<script type="text/javascript" src="../js/config.js"></script>
+</head>
+<body id="login_bg">
+	<div class="header">
+		<h1><img src="../image/logo.png" class="logo" />教育云后台监控系统</h1>
+	</div>
+	<div class="wrapper">
+		<div class="login">
+			<div class="login-header"><h4>注册/创建群组管理员</h4></div>
+			<div class="login-content">
+				<div class="form_text">
+					<span>管理员名称：</span>
+					<span><input type="text" name="" placeholder="username" class="form-control" id="username"></span>
+				</div>
+				<div class="form_text">
+					<span>密码：</span>
+					<span><input type="password" name="" placeholder="password" class="form-control" id="password"></span>
+				</div>
+				<div class="form_text">
+					<span>确认密码：</span>
+					<span><input type="password" name="" placeholder="repassword" class="form-control" id="repassword"></span>
+				</div>
+				<div class="form_text">
+					<span>群组名称：</span>
+					<span><input type="text" name="" placeholder="grounpname" class="form-control" id="grounpname"></span>
+				</div>
+				<div class="form_text">
+					<span>根目录名称：</span>
+					<span><input type="text" name="" placeholder="rootname" class="form-control" id="rootname"></span>
+				</div>
+				<div class="form_text">
+					<span>备注：</span>
+					<span><textarea placeholder="remark" class="form-control" id="remark"></textarea> </span>
+				</div>
+			</div>
+			<div class="login-footer">
+				<button class="btn btn-primary sure">确定</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" role="dialog" id="warning">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">提示</h4>
+	      </div>
+	      <div class="modal-body">
+	       	
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+<script type="text/javascript">
+	seajs.use(['../js/modules/team_create'])   // 这里 use 方法只作为入口函数用，不做业务逻辑处理
+</script>
+</body>

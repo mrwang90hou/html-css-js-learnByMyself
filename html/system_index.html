@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>教育云后台监控系统</title>
+    <link rel="stylesheet" type="text/css" href="../js/lib/bootstrap-3.0.0-dist/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <script type="text/javascript" src="../js/sea.js"></script>
+	<script type="text/javascript" src="../js/config.js"></script>
+</head>
+<body>
+	<div id="header">
+		<h3><img src="../image/logo.png" / id="logo"> | 教育云后台管理系统</h3>
+		<div class="user">
+			<span><a href="member_info.html">伊朗先</a></span>
+			<span>| 退出</span>
+		</div>
+	</div>
+	<div id="main">
+		<div id="nav">
+			<div class="nav_box">
+				<h5><a href="system_index.html"><img src="../image/manager.png" />超管/系统管理员</a></h5>
+				<div class="nav_child">
+					<div><a href="system_admins.html">系统管理员列表</a></div>
+					<div><a href="teams.html">群组列表</a></div>
+					<div><a href="system_info.html">系统信息</a></div>
+					<div><a href="tree.html">文件树</a></div>
+					<div><a href="parameters.html">系统配置</a></div>
+				</div>
+			</div>
+			<div class="nav_box">
+				<h5><a href="team_info.html"><img src="../image/group.png" />群组维护/群组管理员</a></h5>
+				<div class="nav_child">
+					<div><a href="team_info.html">群组信息</a></div>
+					<div><a href="members.html">群组成员</a></div>
+				</div>
+			</div>
+			<div class="nav_box">
+				<h5><a href="member_info.html"><img src="../image/personal.png" />我/群组成员</a></h5>
+				<div class="nav_child">
+					<div><a href="member_tree.html">我的云</a></div>
+					<div><a href="my_team.html">我的群组</a></div>
+				</div>
+			</div>
+		</div>
+		<div id="all">
+			<div class="page_name">
+				超管/系统管理员
+			</div>
+			<div class="box">
+				<div class="tools_bar">
+					<div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" >
+					    用户管理
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    
+					  </ul>
+					</div>
+					<div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" >
+					    存储系统
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    
+					  </ul>
+					</div>
+					<div class="tools_btn">
+						<button class="btn btn-default">注销</button>
+						<button class="btn btn-warning">重设密码</button>
+					</div>
+				</div>
+			</div>
+			<div class="title"><h4>操作说明</h4></div>
+			<div class="box">
+				<div>
+					<p>1、超级管理员登录后，“用户管理”菜单下的子项“管理员”可用；而系统管理员登录后，该子项不可用。</p>
+					<p>2、超级管理员登录后，“重设密码”按钮不可用。</p>
+					<p>3、点击“管理员”选项后，跳转到system_admins.jsp，可以查看系统管理员列表，可以为系统管理员重置密码为“888888”，可以新建系统管理员账户。</p>
+					<p>4、点击“群  组”选项后，跳转到teams.jsp，可以查看群组列表，可以查看群组的文件目录结构。</p>
+					<p>5、点击“系统信息”选项后，跳转到system_info.jsp，可以查看系统当前的状况。</p>
+					<p>6、点击“文件树”选项后，跳转到tree.jsp，可以查看整个Hadoop文件系统的目录结构。</p>
+					<p>7、点击“系统配置”选项后，跳转到parameters.jsp，可以对系统的重要参数进行维护。</p>
+					<p>8、点击“注销”选项后，退出该系统。</p>
+					<p>9、点击“重设密码”选项后，跳转到reset_password.jsp，为当前账户重新设置密码。</p>
+					<p>10、若系统管理员遗忘密码，可以与超级管理员联系，要求重置密码为“888888”，重新登录后可通过“重设密码”进行修改。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		seajs.use(['../js/modules/system_index'])   // 这里 use 方法只作为入口函数用，不做业务逻辑处理
+	</script>
+</body>

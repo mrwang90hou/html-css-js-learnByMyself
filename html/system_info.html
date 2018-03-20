@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>教育云后台监控系统</title>
+    <link rel="stylesheet" type="text/css" href="../js/lib/bootstrap-3.0.0-dist/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/system_info.css" />
+    <script type="text/javascript" src="../js/sea.js"></script>
+	<script type="text/javascript" src="../js/config.js"></script>
+</head>
+<body>
+	<div id="header">
+		<h3><img src="../image/logo.png" / id="logo"> | 教育云后台管理系统</h3>
+		<div class="user">
+			<span><a href="member_info.html">伊朗先</a></span>
+			<span>| 退出</span>
+		</div>
+	</div>
+	<div id="main">
+		<div id="nav">
+			<div class="nav_box">
+				<h5><a href="system_index.html"><img src="../image/manager.png" />超管/系统管理员</a></h5>
+				<div class="nav_child">
+					<div><a href="system_admins.html" >系统管理员列表</a></div>
+					<div><a href="teams.html">群组列表</a></div>
+					<div><a href="system_info.html" class="current">系统信息</a></div>
+					<div><a href="tree.html">文件树</a></div>
+					<div><a href="parameters.html">系统配置</a></div>
+				</div>
+			</div>
+			<div class="nav_box">
+				<h5><a href="team_info.html"><img src="../image/group.png" />群组维护/群组管理员</a></h5>
+				<div class="nav_child">
+					<div><a href="team_info.html">群组信息</a></div>
+					<div><a href="members.html">群组成员</a></div>
+				</div>
+			</div>
+			<div class="nav_box">
+				<h5><a href="member_info.html"><img src="../image/personal.png" />我/群组成员</a></h5>
+				<div class="nav_child">
+					<div><a href="member_tree.html">我的云</a></div>
+					<div><a href="my_team.html">我的群组</a></div>
+				</div>
+			</div>
+		</div>
+		<div id="all">
+			<div class="page_name">
+				系统信息
+			</div>
+			<div class="box">
+				<div class="tools_bar">
+					<div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" >
+					    用户管理
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					  
+					  </ul>
+					</div>
+					<div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" >
+					    存储系统
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    
+					  </ul>
+					</div>
+					<div class="tools_btn">
+						<button class="btn btn-default">注销</button>
+						<button class="btn btn-warning">重设密码</button>
+					</div>
+				</div>
+			</div>
+			<div class="title"><h4>系统信息</h4></div>
+			<div class="box">
+				<div class="form_table">
+					<table class="table table-striped">
+					  <tr><th>item</th><th>value</th></tr>
+					  
+					</table>
+					<div class="navigation">
+					  <ul class="pagination">
+					    <li>
+					      <a href="#" aria-label="Previous">
+					        <span aria-hidden="true">&laquo;</span>
+					      </a>
+					    </li>
+					    <li class="active"><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					    <li>
+					      <a href="#" aria-label="Next">
+					        <span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+					  </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		seajs.use(['../js/modules/system_info'])   // 这里 use 方法只作为入口函数用，不做业务逻辑处理
+	</script>
+</body>

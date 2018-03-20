@@ -1,0 +1,22 @@
+.my_team{
+	padding-bottom: 30px;
+	border: none;
+}
+
+/*share*/
+.double_control .share{
+	line-height: 34px;	
+}
+.double_control .share>input{
+	vertical-align: -2px;
+}
+.double_control .share>input:nth-child(2){
+	margin-left: 50px;
+}
+.modal .dialog_form .share>span input{
+	width: 20%;
+	margin-top: 12px;
+}
+.modal .dialog_form .share{
+	margin-bottom: 10px;
+}

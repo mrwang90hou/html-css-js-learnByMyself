@@ -1,0 +1,33 @@
+{ 
+  "tree":[{
+  	"text":"文件夹1",
+  	"href":"#parent1",
+  	"nodes":[{
+  		"text":"子文件夹1",
+  		"href":"#child1",
+  		"nodes":[{
+  			"text":"文件1",
+  			"href":"#",
+  			"id":"00001",
+  			"nodeId":"00001"
+  		},{
+  			"text":"文件2",
+  			"href":"a",
+  			"id":"00002",
+  			"nodeId":"00002"
+  		}]
+  	}]
+  }],
+  "dropdown1":[{
+  		"select":"管理员"
+  },{
+  		"select":"群组"
+  }],
+  "dropdown2":[{
+  		"select":"系统信息"
+  },{
+  		"select":"文件树"
+  },{
+  		"select":"系统配置"
+  }]
+}

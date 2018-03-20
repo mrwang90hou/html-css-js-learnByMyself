@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>教育云后台监控系统</title>
+    <link rel="stylesheet" type="text/css" href="../js/lib/bootstrap-3.0.0-dist/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tree.css" />
+    <script type="text/javascript" src="../js/lib/jquery.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrap-treeview.min.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery.contextify.min.js"></script>
+    
+    <script type="text/javascript" src="../js/sea.js"></script>
+	<script type="text/javascript" src="../js/config.js"></script>
+</head>
+
+<body>
+<div id="tree"></div>
+
+<input type="button" id="btn" value="查询" />
+
+<script type="text/javascript">
+    $(function () {
+        function getTree() {
+            // Some logic to retrieve, or generate tree structure
+
+
+            var data = [{
+                text: "p1",
+                nodes: [{ text: "p1-1", id: '00001', nodeId: '00001' }, { text: "p1-2", id: '00002' }, { text: "p1-3", id: '00003' }, { text: "p1-4", id: '00004', nodes: [{ text: 'p1-1-1', id: '00005'}]}]
+
+            }]
+            return data;
+        }
+        // var obj = {};
+        // obj.text = "123";
+        $('#tree').treeview({
+            data: getTree(),         // data is not optional
+            levels: 5,
+            multiSelect: true
+
+        });
+
+        $("#btn").click(function (e) {
+
+            var arr = $('#tree').treeview('getSelected');
+
+            // alert(JSON.stringify(arr));
+            for (var key in arr) {
+                alert(arr[key].id);
+            }
+
+        })
+
+    })
+   
+</script>
+</body>
+</html>
+

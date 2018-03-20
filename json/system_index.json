@@ -1,0 +1,14 @@
+{
+  "dropdown1":[{
+  		"select":"管理员"
+  },{
+  		"select":"群组"
+  }],
+  "dropdown2":[{
+  		"select":"系统信息"
+  },{
+  		"select":"文件树"
+  },{
+  		"select":"系统配置"
+  }]
+}

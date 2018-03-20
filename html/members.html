@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>教育云后台监控系统</title>
+    <link rel="stylesheet" type="text/css" href="../js/lib/bootstrap-3.0.0-dist/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/team.css">
+    <script type="text/javascript" src="../js/sea.js"></script>
+	<script type="text/javascript" src="../js/config.js"></script>
+</head>
+<body>
+	<div id="header">
+		<h3><img src="../image/logo.png" / id="logo"> | 教育云后台管理系统</h3>
+		<div class="user">
+			<span><a href="member_info.html">伊朗先</a></span>
+			<span>| 退出</span>
+		</div>
+	</div>
+	<div id="main">
+		<div id="nav">
+			<div class="nav_box">
+				<h5><a href="system_index.html"><img src="../image/manager.png" />超管/系统管理员</a></h5>
+				<div class="nav_child">
+					<div><a href="system_admins.html">系统管理员列表</a></div>
+					<div><a href="teams.html">群组列表</a></div>
+					<div><a href="system_info.html">系统信息</a></div>
+					<div><a href="tree.html">文件树</a></div>
+					<div><a href="parameters.html">系统配置</a></div>
+				</div>
+			</div>
+			<div class="nav_box">
+				<h5><a href="team_info.html"><img src="../image/group.png" />群组维护/群组管理员</a></h5>
+				<div class="nav_child">
+					<div><a href="team_info.html">群组信息</a></div>
+					<div><a href="members.html" class="current">群组成员</a></div>
+				</div>
+			</div>
+			<div class="nav_box">
+				<h5><a href="member_info.html"><img src="../image/personal.png" />我/群组成员</a></h5>
+				<div class="nav_child">
+					<div><a href="member_tree.html">我的云</a></div>
+					<div><a href="my_team.html">我的群组</a></div>
+				</div>
+			</div>
+		</div>
+		<div id="all">
+			<div class="page_name">
+				群组维护/群组管理员
+			</div>
+			<div class="box">
+				<div class="tools_bar">
+					<div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" >
+					    群组信息
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    
+					  </ul>
+					</div>
+					<div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" >
+					    群组成员
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    
+					  </ul>
+					</div>
+					<div class="tools_btn">
+						<button class="btn btn-default">注销</button>
+						<button class="btn btn-warning">重设密码</button>
+					</div>
+				</div>
+			</div>
+			<div class="title"><h4>群组成员</h4></div>
+			<div class="box">
+				<div class="form_table">
+					<table class="table table-striped">
+					  <tr><th>序号</th><th>成员编号</th><th>成员名称</th><th>注册时间</th><th>家目录</th></tr>
+					  <!--  -->
+					</table>
+					<div class="navigation">
+					  <ul class="pagination">
+					    <li>
+					      <a href="#" aria-label="Previous">
+					        <span aria-hidden="true">&laquo;</span>
+					      </a>
+					    </li>
+					    <li class="active"><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					    <li>
+					      <a href="#" aria-label="Next">
+					        <span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+					  </ul>
+					</div>
+					<div class="table_detail">
+						<div class="double_control">
+							<span>成员编号：</span>
+							<span><input type="text" name="" class="form-control" disabled="disabled" id="user_number"></span>
+							<span>成员名称：</span>
+							<span><input type="text" name="" id="user_name" class="form-control"></span>
+							<span>创建日期：</span>
+							<span><input type="text" name="" class="form-control"  disabled="disabled" id="register_time"></span>
+							<span>家目录：</span>
+							<span><input type="text" name="" id="home" class="form-control"></span>
+							<span>开启共享：</span>
+							<span class="share"><input type="checkbox" name="share"  id="read_share"> 读共享
+							<input type="checkbox" name="share"  id="write_share"> 写共享</span>
+							<span>备注：</span>
+							<span><textarea class="form-control" id="remark"></textarea></span>
+						</div>
+						<div class="btn_box">
+							<button class="btn btn-default btn_add" data-toggle="modal" data-target="#myModal">新建成员</button>
+							<button class="btn btn-primary btn_team">保存信息</button>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">新建群组成员</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="dialog_form">
+	        	<div><span>编号：</span><input type="text" name="" class="form-control" disabled="disabled"></div>
+	        	<div><span>成员名称：</span><input type="text" name="" class="form-control"></div>
+	        	<div><span>创建时间：</span><input type="text" name="" class="form-control" id="nowTime" disabled="disabled"></div>
+	        	<div><span>家目录：</span><input type="text" name="" class="form-control"></div>
+	        	<div class="share"><span>开启共享：</span><span><input type="checkbox" name="share" >读共享</span>
+	        		<span><input type="checkbox" name="share">写共享</span>
+	        	</div>
+	        	<div><span>备注：</span><textarea class="form-control"></textarea></div>
+	        </div>
+	        </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	        <button type="button" class="btn btn-primary">保存</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<script type="text/javascript">
+		seajs.use(['../js/modules/members'])   // 这里 use 方法只作为入口函数用，不做业务逻辑处理
+	</script>
+</body>

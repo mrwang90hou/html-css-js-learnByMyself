@@ -1,0 +1,41 @@
+
+.mid_info{
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+
+.box .left_table{
+	height: 420px;
+	width: 100%;
+	text-align:center;
+	padding-right: 380px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.left_table th{
+	text-align:center;
+}
+.box  table tr:hover td{
+	background: #f0ad4e;
+	color: #fff;
+}
+.box .tree{
+	height: 480px;
+	width: 360px;
+	position: absolute;
+	right: 0px;
+}
+
+
+.right{
+	float:right;
+}
+.left{
+	float:left;
+}
+
+.table_detail{
+	display: none;
+}
